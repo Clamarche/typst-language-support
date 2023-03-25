@@ -1,0 +1,25 @@
+{
+  "name": "typst-language-support",
+  "displayName": "typst language support",
+  "description": "Language support for the typst type scripting language.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "typst",
+      "aliases": ["typst", "typst"],
+      "extensions": [".typ"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "typst",
+      "scopeName": "source.typst",
+      "path": "./syntaxes/typst.tmLanguage.json"
+    }]
+  }
+}
